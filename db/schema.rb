@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 2020_05_22_100119) do
 
   create_table "generations", force: :cascade do |t|
     t.integer "world_id", null: false
-    t.json "result"
+    t.json "result", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["world_id"], name: "index_generations_on_world_id"
