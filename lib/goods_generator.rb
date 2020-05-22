@@ -5,14 +5,29 @@ class GoodsGenerator
     @trade_classes = trade_classes
   end
 
-  def generate
-    chosen_goods
+  def result
+    chosen_goods.map do |g|
+      {
+        name: g.name,
+        tons_available: tons_available(g),
+        purchase_price: purchase_price(g),
+        sale_price: sale_price(g),
+      }
+    end
   end
 
   # private
 
   def tons_available(good)
     d6 * good.tons
+  end
+
+  def purchase_price(good)
+    good.base_price * (good.purchase_price / 100)
+  end
+
+  def sale_price(good)
+    good.base_price * (good.sale_price / 100)
   end
 
   def chosen_goods
