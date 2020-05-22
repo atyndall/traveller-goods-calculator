@@ -1,13 +1,27 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>World:</strong>
-  <%= @generation.world_id %>
-</p>
+<h1><%= @generation.world.name %>, <%= time_ago_in_words @generation.created_at %> ago</h1>
+<h2><%= @generation.created_at %></h2>
 
-<p>
-  <strong>Result:</strong>
-  <%= @generation.result %>
-</p>
+<table class="trade-select-table" border="1">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Tons Available</th>
+      <th>Purchase Price</th>
+      <th>Sale Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @generation.result.each do |line| %>
+      <tr>
+        <td><%= line['name'] %></td>
+        <td><%= number_with_delimiter line['tons_available'] %></td>
+        <td><%= number_with_delimiter line['purchase_price'] %></td>
+        <td><%= number_with_delimiter line['sale_price'] %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
 
 <%= link_to 'Back', root_path %>

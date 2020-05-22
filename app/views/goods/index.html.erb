@@ -32,11 +32,11 @@
     <% @goods.each do |good| %>
       <tr>
         <td class="name"><%= good.name %></td>
-        <td><%= good.tons %></td>
-        <td><%= good.base_price %></td>
+        <td><%= number_with_delimiter good.tons %></td>
+        <td><%= number_with_delimiter good.base_price %></td>
         <td><%= good.result %></td>
-        <td><%= good.purchase_price %></td>
-        <td><%= good.sale_price %></td>
+        <td><%= number_with_delimiter good.purchase_price %>%</td>
+        <td><%= number_with_delimiter good.sale_price %>%</td>
 
         <% trade_classes_sym.each do |c| %>
           <td class="fixed"><%= yes_no_emoji good.send(:"available_#{c}") %></td>
