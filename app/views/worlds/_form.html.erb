@@ -1,0 +1,67 @@
+<%= form_with(model: world, local: true) do |form| %>
+  <% if world.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(world.errors.count, "error") %> prohibited this world from being saved:</h2>
+
+      <ul>
+        <% world.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :subsector_id %>
+    <%= form.collection_select(:subsector_id, Subsector.all, :id, :name, prompt: true) %>
+  </div>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :starport %>
+    <%= form.select :starport, World::STARPORT_OPTIONS %>
+  </div>
+
+  <div class="field">
+    <%= form.label :size %>
+    <%= form.number_field :size %>
+  </div>
+
+  <div class="field">
+    <%= form.label :atmosphere %>
+    <%= form.number_field :atmosphere %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hydrography %>
+    <%= form.number_field :hydrography %>
+  </div>
+
+  <div class="field">
+    <%= form.label :population %>
+    <%= form.number_field :population %>
+  </div>
+
+  <div class="field">
+    <%= form.label :government %>
+    <%= form.number_field :government %>
+  </div>
+
+  <div class="field">
+    <%= form.label :law_level %>
+    <%= form.number_field :law_level %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tech_level %>
+    <%= form.number_field :tech_level %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

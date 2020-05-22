@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @subsector.name %>
+</p>
+
+<p>
+  <strong>Worlds:</strong>
+  <ul>
+    <% @subsector.worlds.each do |w| %>
+      <li><%= link_to w.name, world_path(w) %></li>
+    <% end %>
+  </ul>
+</p>
+
+<%= link_to 'Edit', edit_subsector_path(@subsector) %> |
+<%= link_to 'Back', subsectors_path %>

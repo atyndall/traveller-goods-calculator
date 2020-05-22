@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Subsector:</strong>
+  <%= link_to @world.subsector.name, subsector_path(@world.subsector) %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @world.name %>
+</p>
+
+<p>
+  <strong>Trade classes:</strong>
+  <%= @world.trade_classes %>
+</p>
+
+<p>
+  <strong>Starport:</strong>
+  <%= @world.starport %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @world.size %>
+</p>
+
+<p>
+  <strong>Atmosphere:</strong>
+  <%= @world.atmosphere %>
+</p>
+
+<p>
+  <strong>Hydrography:</strong>
+  <%= @world.hydrography %>
+</p>
+
+<p>
+  <strong>Population:</strong>
+  <%= @world.population %>
+</p>
+
+<p>
+  <strong>Government:</strong>
+  <%= @world.government %>
+</p>
+
+<p>
+  <strong>Law level:</strong>
+  <%= @world.law_level %>
+</p>
+
+<p>
+  <strong>Tech level:</strong>
+  <%= @world.tech_level %>
+</p>
+
+<%= link_to 'Edit', edit_world_path(@world) %> |
+<%= link_to 'Back', worlds_path %>

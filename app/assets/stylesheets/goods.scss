@@ -1,0 +1,35 @@
+// Place all the styles related to the Goods controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.goods-table {
+  text-align: center;
+  vertical-align: center;
+  table-layout: fixed;
+
+  .fixed {
+    min-width: 30px;
+  }
+
+  .name {
+    white-space: nowrap;
+  }
+}
+
+.trade-select-table {
+  text-align: center;
+  vertical-align: center;
+
+  td,
+  th {
+    min-width: 30px;
+  }
+
+  input {
+    width: 100px;
+  }
+
+  tbody th {
+    white-space: nowrap;
+  }
+}

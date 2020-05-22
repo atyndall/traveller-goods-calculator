@@ -1,0 +1,48 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Worlds</h1>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Subsector</th>
+      <th>Name</th>
+      <th>Trade Classes</th>
+      <th>Starport</th>
+      <th>Size</th>
+      <th>Atmosphere</th>
+      <th>Hydrography</th>
+      <th>Population</th>
+      <th>Government</th>
+      <th>Law Level</th>
+      <th>Tech Level</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @worlds.each do |world| %>
+      <tr>
+        <td><%= world.subsector.name %></td>
+        <td><%= world.name %></td>
+        <td><%= world.trade_classes %></td>
+        <td><%= world.starport %></td>
+        <td><%= world.size %></td>
+        <td><%= world.atmosphere %></td>
+        <td><%= world.hydrography %></td>
+        <td><%= world.population %></td>
+        <td><%= world.government %></td>
+        <td><%= world.law_level %></td>
+        <td><%= world.tech_level %></td>
+        <td><%= link_to 'Show', world %></td>
+        <td><%= link_to 'Edit', edit_world_path(world) %></td>
+        <td><%= link_to 'Destroy', world, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New World', new_world_path %>
+<%= link_to 'Back', root_path %>

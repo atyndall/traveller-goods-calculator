@@ -1,0 +1,57 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @good.name %>
+</p>
+
+<p>
+  <strong>Tons:</strong>
+  <%= @good.tons %>
+</p>
+
+<p>
+  <strong>Base Price:</strong>
+  <%= @good.base_price %>
+</p>
+
+<p>
+  <strong>Result:</strong>
+  <%= @good.result %>
+</p>
+
+<p>
+  <table class="trade-select-table">
+    <thead>
+      <tr>
+        <th></th>
+        <% trade_classes_str.each do |c| %>
+          <th><%= c %></th>
+        <% end %>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th class="fixed">Availability</th>
+        <% trade_classes_sym.each do |c| %>
+            <td><%= yes_no_emoji @good.send(:"available_#{c}") %></td>
+          <% end %>
+      </tr>
+      <tr>
+        <th>Purchase DM</th>
+        <% trade_classes_sym.each do |c| %>
+            <td><%= @good.send(:"purchase_dm_#{c}") %></td>
+          <% end %>
+      </tr>
+      <tr>
+        <th>Sale DM</th>
+        <% trade_classes_sym.each do |c| %>
+            <td><%= @good.send(:"sale_dm_#{c}") %></td>
+          <% end %>
+      </tr>
+    </tbody>
+  </table>
+</p>
+
+<%= link_to 'Edit', edit_good_path(@good) %> |
+<%= link_to 'Back', goods_path %>
