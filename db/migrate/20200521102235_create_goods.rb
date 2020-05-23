@@ -4,9 +4,6 @@ class CreateGoods < ActiveRecord::Migration[6.0]
       t.string :name, null: false
       t.integer :tons, limit: 1, null: false
       t.integer :base_price, limit: 4, null: false
-      t.integer :result, limit: 2, null: true
-      t.integer :purchase_price, limit: 2, null: true
-      t.integer :sale_price, limit: 2, null: true
       t.boolean :available_ag, default: false, null: false
       t.boolean :available_as, default: false, null: false
       t.boolean :available_ba, default: false, null: false

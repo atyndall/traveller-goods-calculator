@@ -24,9 +24,6 @@ ActiveRecord::Schema.define(version: 2020_05_22_100119) do
     t.string "name", null: false
     t.integer "tons", limit: 1, null: false
     t.integer "base_price", limit: 4, null: false
-    t.integer "result", limit: 2
-    t.integer "purchase_price", limit: 2
-    t.integer "sale_price", limit: 2
     t.boolean "available_ag", default: false, null: false
     t.boolean "available_as", default: false, null: false
     t.boolean "available_ba", default: false, null: false

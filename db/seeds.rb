@@ -12,9 +12,6 @@ Good.create(
   name: 'Basic Electronics',
   tons: 10,
   base_price: 10000,
-  result: -1,
-  purchase_price: 400,
-  sale_price: 25,
   available_ag: true, available_as: true, available_ba: true, available_de: true, available_fl: true, available_ga: true, available_hi: true, available_ht: true, available_ic: true, available_in: true, available_lo: true, available_lt: true, available_na: true, available_ni: true, available_po: true, available_ri: true, available_va: true, available_wa: true,
   purchase_dm_ag: 0, purchase_dm_as: 0, purchase_dm_ba: 0, purchase_dm_de: 0, purchase_dm_fl: 0, purchase_dm_ga: 0, purchase_dm_hi: 0, purchase_dm_ht: 3, purchase_dm_ic: 0, purchase_dm_in: 2, purchase_dm_lo: 0, purchase_dm_lt: 0, purchase_dm_na: 0, purchase_dm_ni: 0, purchase_dm_po: 0, purchase_dm_ri: 1, purchase_dm_va: 0, purchase_dm_wa: 0,
   sale_dm_ag: 0, sale_dm_as: 0, sale_dm_ba: 0, sale_dm_de: 0, sale_dm_fl: 0, sale_dm_ga: 0, sale_dm_hi: 0, sale_dm_ht: 0, sale_dm_ic: 0, sale_dm_in: 0, sale_dm_lo: 0, sale_dm_lt: 1, sale_dm_na: 0, sale_dm_ni: 2, sale_dm_po: 1, sale_dm_ri: 0, sale_dm_va: 0, sale_dm_wa: 0
@@ -24,9 +21,6 @@ Good.create(
   name: 'Basic Machine Parts',
   tons: 10,
   base_price: 10000,
-  result: 0,
-  purchase_price: 300,
-  sale_price: 40,
   available_ag: true, available_as: true, available_ba: true, available_de: true, available_fl: true, available_ga: true, available_hi: true, available_ht: true, available_ic: true, available_in: true, available_lo: true, available_lt: true, available_na: true, available_ni: true, available_po: true, available_ri: true, available_va: true, available_wa: true,
   purchase_dm_ag: 0, purchase_dm_as: 0, purchase_dm_ba: 0, purchase_dm_de: 0, purchase_dm_fl: 0, purchase_dm_ga: 0, purchase_dm_hi: 0, purchase_dm_ht: 0, purchase_dm_ic: 0, purchase_dm_in: 5, purchase_dm_lo: 0, purchase_dm_lt: 0, purchase_dm_na: 2, purchase_dm_ni: 0, purchase_dm_po: 0, purchase_dm_ri: 0, purchase_dm_va: 0, purchase_dm_wa: 0,
   sale_dm_ag: 2, sale_dm_as: 0, sale_dm_ba: 0, sale_dm_de: 0, sale_dm_fl: 0, sale_dm_ga: 0, sale_dm_hi: 0, sale_dm_ht: 0, sale_dm_ic: 0, sale_dm_in: 0, sale_dm_lo: 0, sale_dm_lt: 0, sale_dm_na: 0, sale_dm_ni: 3, sale_dm_po: 0, sale_dm_ri: 0, sale_dm_va: 0, sale_dm_wa: 0
@@ -36,9 +30,6 @@ Good.create(
   name: 'Basic Manufactured Goods',
   tons: 10,
   base_price: 10000,
-  result: 1,
-  purchase_price: 200,
-  sale_price: 50,
   available_ag: true, available_as: true, available_ba: true, available_de: true, available_fl: true, available_ga: true, available_hi: true, available_ht: true, available_ic: true, available_in: true, available_lo: true, available_lt: true, available_na: true, available_ni: true, available_po: true, available_ri: true, available_va: true, available_wa: true,
   purchase_dm_ag: 0, purchase_dm_as: 0, purchase_dm_ba: 0, purchase_dm_de: 0, purchase_dm_fl: 0, purchase_dm_ga: 0, purchase_dm_hi: 0, purchase_dm_ht: 0, purchase_dm_ic: 0, purchase_dm_in: 5, purchase_dm_lo: 0, purchase_dm_lt: 0, purchase_dm_na: 2, purchase_dm_ni: 0, purchase_dm_po: 0, purchase_dm_ri: 0, purchase_dm_va: 0, purchase_dm_wa: 0,
   sale_dm_ag: 0, sale_dm_as: 0, sale_dm_ba: 0, sale_dm_de: 0, sale_dm_fl: 0, sale_dm_ga: 0, sale_dm_hi: 2, sale_dm_ht: 0, sale_dm_ic: 0, sale_dm_in: 0, sale_dm_lo: 0, sale_dm_lt: 0, sale_dm_na: 0, sale_dm_ni: 3, sale_dm_po: 0, sale_dm_ri: 0, sale_dm_va: 0, sale_dm_wa: 0
@@ -48,9 +39,6 @@ Good.create(
   name: 'Basic Raw Materials',
   tons: 10,
   base_price: 5000,
-  result: 2,
-  purchase_price: 175,
-  sale_price: 55,
   available_ag: true, available_as: true, available_ba: true, available_de: true, available_fl: true, available_ga: true, available_hi: true, available_ht: true, available_ic: true, available_in: true, available_lo: true, available_lt: true, available_na: true, available_ni: true, available_po: true, available_ri: true, available_va: true, available_wa: true,
   purchase_dm_ag: 3, purchase_dm_as: 0, purchase_dm_ba: 0, purchase_dm_de: 0, purchase_dm_fl: 0, purchase_dm_ga: 2, purchase_dm_hi: 0, purchase_dm_ht: 0, purchase_dm_ic: 0, purchase_dm_in: 0, purchase_dm_lo: 0, purchase_dm_lt: 0, purchase_dm_na: 0, purchase_dm_ni: 0, purchase_dm_po: 0, purchase_dm_ri: 0, purchase_dm_va: 0, purchase_dm_wa: 0,
   sale_dm_ag: 0, sale_dm_as: 0, sale_dm_ba: 0, sale_dm_de: 0, sale_dm_fl: 0, sale_dm_ga: 0, sale_dm_hi: 0, sale_dm_ht: 0, sale_dm_ic: 0, sale_dm_in: 2, sale_dm_lo: 0, sale_dm_lt: 0, sale_dm_na: 0, sale_dm_ni: 0, sale_dm_po: 2, sale_dm_ri: 0, sale_dm_va: 0, sale_dm_wa: 0
@@ -60,9 +48,6 @@ Good.create(
   name: 'Basic Consumables',
   tons: 10,
   base_price: 2000,
-  result: 3,
-  purchase_price: 150,
-  sale_price: 65,
   available_ag: true, available_as: true, available_ba: true, available_de: true, available_fl: true, available_ga: true, available_hi: true, available_ht: true, available_ic: true, available_in: true, available_lo: true, available_lt: true, available_na: true, available_ni: true, available_po: true, available_ri: true, available_va: true, available_wa: true,
   purchase_dm_ag: 3, purchase_dm_as: -4, purchase_dm_ba: 0, purchase_dm_de: 0, purchase_dm_fl: 0, purchase_dm_ga: 1, purchase_dm_hi: 0, purchase_dm_ht: 0, purchase_dm_ic: 0, purchase_dm_in: 0, purchase_dm_lo: 0, purchase_dm_lt: 0, purchase_dm_na: 0, purchase_dm_ni: 0, purchase_dm_po: 0, purchase_dm_ri: 0, purchase_dm_va: 0, purchase_dm_wa: 2,
   sale_dm_ag: 0, sale_dm_as: 1, sale_dm_ba: 0, sale_dm_de: 0, sale_dm_fl: 1, sale_dm_ga: 0, sale_dm_hi: 1, sale_dm_ht: 0, sale_dm_ic: 1, sale_dm_in: 0, sale_dm_lo: 0, sale_dm_lt: 0, sale_dm_na: 0, sale_dm_ni: 0, sale_dm_po: 0, sale_dm_ri: 0, sale_dm_va: 0, sale_dm_wa: 0
@@ -72,9 +57,6 @@ Good.create(
   name: 'Basic Ore',
   tons: 10,
   base_price: 1000,
-  result: 4,
-  purchase_price: 135,
-  sale_price: 70,
   available_ag: true, available_as: true, available_ba: true, available_de: true, available_fl: true, available_ga: true, available_hi: true, available_ht: true, available_ic: true, available_in: true, available_lo: true, available_lt: true, available_na: true, available_ni: true, available_po: true, available_ri: true, available_va: true, available_wa: true,
   purchase_dm_ag: 0, purchase_dm_as: 4, purchase_dm_ba: 0, purchase_dm_de: 0, purchase_dm_fl: 0, purchase_dm_ga: 0, purchase_dm_hi: 0, purchase_dm_ht: 0, purchase_dm_ic: 0, purchase_dm_in: 0, purchase_dm_lo: 0, purchase_dm_lt: 0, purchase_dm_na: 0, purchase_dm_ni: 0, purchase_dm_po: 0, purchase_dm_ri: 0, purchase_dm_va: 0, purchase_dm_wa: 0,
   sale_dm_ag: 0, sale_dm_as: 0, sale_dm_ba: 0, sale_dm_de: 0, sale_dm_fl: 0, sale_dm_ga: 0, sale_dm_hi: 0, sale_dm_ht: 0, sale_dm_ic: 0, sale_dm_in: 3, sale_dm_lo: 0, sale_dm_lt: 0, sale_dm_na: 0, sale_dm_ni: 0, sale_dm_po: 0, sale_dm_ri: 0, sale_dm_va: 0, sale_dm_wa: 0
@@ -84,9 +66,6 @@ Good.create(
   name: 'Advanced Electronics',
   tons: 5,
   base_price: 100000,
-  result: 5,
-  purchase_price: 125,
-  sale_price: 75,
   available_ag: false, available_as: false, available_ba: false, available_de: false, available_fl: false, available_ga: false, available_hi: false, available_ht: true, available_ic: false, available_in: true, available_lo: false, available_lt: false, available_na: false, available_ni: false, available_po: false, available_ri: false, available_va: false, available_wa: false,
   purchase_dm_ag: 0, purchase_dm_as: 0, purchase_dm_ba: 0, purchase_dm_de: 0, purchase_dm_fl: 0, purchase_dm_ga: 0, purchase_dm_hi: 0, purchase_dm_ht: 3, purchase_dm_ic: 0, purchase_dm_in: 2, purchase_dm_lo: 0, purchase_dm_lt: 0, purchase_dm_na: 0, purchase_dm_ni: 0, purchase_dm_po: 0, purchase_dm_ri: 0, purchase_dm_va: 0, purchase_dm_wa: 0,
   sale_dm_ag: 0, sale_dm_as: 3, sale_dm_ba: 0, sale_dm_de: 0, sale_dm_fl: 0, sale_dm_ga: 0, sale_dm_hi: 0, sale_dm_ht: 0, sale_dm_ic: 0, sale_dm_in: 0, sale_dm_lo: 0, sale_dm_lt: 0, sale_dm_na: 0, sale_dm_ni: 1, sale_dm_po: 0, sale_dm_ri: 2, sale_dm_va: 0, sale_dm_wa: 0
@@ -96,9 +75,6 @@ Good.create(
   name: 'Advanced Machine Parts',
   tons: 5,
   base_price: 75000,
-  result: 6,
-  purchase_price: 120,
-  sale_price: 80,
   available_ag: false, available_as: false, available_ba: false, available_de: false, available_fl: false, available_ga: false, available_hi: false, available_ht: true, available_ic: false, available_in: true, available_lo: false, available_lt: false, available_na: false, available_ni: false, available_po: false, available_ri: false, available_va: false, available_wa: false,
   purchase_dm_ag: 0, purchase_dm_as: 0, purchase_dm_ba: 0, purchase_dm_de: 0, purchase_dm_fl: 0, purchase_dm_ga: 0, purchase_dm_hi: 0, purchase_dm_ht: 1, purchase_dm_ic: 0, purchase_dm_in: 2, purchase_dm_lo: 0, purchase_dm_lt: 0, purchase_dm_na: 0, purchase_dm_ni: 0, purchase_dm_po: 0, purchase_dm_ri: 0, purchase_dm_va: 0, purchase_dm_wa: 0,
   sale_dm_ag: 0, sale_dm_as: 2, sale_dm_ba: 0, sale_dm_de: 0, sale_dm_fl: 0, sale_dm_ga: 0, sale_dm_hi: 0, sale_dm_ht: 0, sale_dm_ic: 0, sale_dm_in: 0, sale_dm_lo: 0, sale_dm_lt: 0, sale_dm_na: 0, sale_dm_ni: 1, sale_dm_po: 0, sale_dm_ri: 0, sale_dm_va: 0, sale_dm_wa: 0
@@ -108,9 +84,6 @@ Good.create(
   name: 'Advanced Manufactured Goods',
   tons: 5,
   base_price: 100000,
-  result: 7,
-  purchase_price: 115,
-  sale_price: 85,
   available_ag: false, available_as: false, available_ba: false, available_de: false, available_fl: false, available_ga: false, available_hi: false, available_ht: true, available_ic: false, available_in: true, available_lo: false, available_lt: false, available_na: false, available_ni: false, available_po: false, available_ri: false, available_va: false, available_wa: false,
   purchase_dm_ag: 0, purchase_dm_as: 0, purchase_dm_ba: 0, purchase_dm_de: 0, purchase_dm_fl: 0, purchase_dm_ga: 0, purchase_dm_hi: 0, purchase_dm_ht: 0, purchase_dm_ic: 0, purchase_dm_in: 1, purchase_dm_lo: 0, purchase_dm_lt: 0, purchase_dm_na: 0, purchase_dm_ni: 0, purchase_dm_po: 0, purchase_dm_ri: 0, purchase_dm_va: 0, purchase_dm_wa: 0,
   sale_dm_ag: 0, sale_dm_as: 0, sale_dm_ba: 0, sale_dm_de: 0, sale_dm_fl: 0, sale_dm_ga: 0, sale_dm_hi: 1, sale_dm_ht: 0, sale_dm_ic: 0, sale_dm_in: 0, sale_dm_lo: 0, sale_dm_lt: 0, sale_dm_na: 0, sale_dm_ni: 0, sale_dm_po: 0, sale_dm_ri: 2, sale_dm_va: 0, sale_dm_wa: 0
@@ -120,9 +93,6 @@ Good.create(
   name: 'Advanced Weapons',
   tons: 5,
   base_price: 150000,
-  result: 8,
-  purchase_price: 110,
-  sale_price: 90,
   available_ag: false, available_as: false, available_ba: false, available_de: false, available_fl: false, available_ga: false, available_hi: false, available_ht: true, available_ic: false, available_in: true, available_lo: false, available_lt: false, available_na: false, available_ni: false, available_po: false, available_ri: false, available_va: false, available_wa: false,
   purchase_dm_ag: 0, purchase_dm_as: 0, purchase_dm_ba: 0, purchase_dm_de: 0, purchase_dm_fl: 0, purchase_dm_ga: 0, purchase_dm_hi: 0, purchase_dm_ht: 2, purchase_dm_ic: 0, purchase_dm_in: 0, purchase_dm_lo: 0, purchase_dm_lt: 0, purchase_dm_na: 0, purchase_dm_ni: 0, purchase_dm_po: 0, purchase_dm_ri: 0, purchase_dm_va: 0, purchase_dm_wa: 0,
   sale_dm_ag: 0, sale_dm_as: 0, sale_dm_ba: 0, sale_dm_de: 0, sale_dm_fl: 0, sale_dm_ga: 0, sale_dm_hi: 0, sale_dm_ht: 0, sale_dm_ic: 0, sale_dm_in: 0, sale_dm_lo: 0, sale_dm_lt: 0, sale_dm_na: 0, sale_dm_ni: 0, sale_dm_po: 1, sale_dm_ri: 0, sale_dm_va: 0, sale_dm_wa: 0
@@ -132,9 +102,6 @@ Good.create(
   name: 'Advanced Vehicles',
   tons: 5,
   base_price: 180000,
-  result: 9,
-  purchase_price: 105,
-  sale_price: 95,
   available_ag: false, available_as: false, available_ba: false, available_de: false, available_fl: false, available_ga: false, available_hi: false, available_ht: true, available_ic: false, available_in: true, available_lo: false, available_lt: false, available_na: false, available_ni: false, available_po: false, available_ri: false, available_va: false, available_wa: false,
   purchase_dm_ag: 0, purchase_dm_as: 0, purchase_dm_ba: 0, purchase_dm_de: 0, purchase_dm_fl: 0, purchase_dm_ga: 0, purchase_dm_hi: 0, purchase_dm_ht: 2, purchase_dm_ic: 0, purchase_dm_in: 0, purchase_dm_lo: 0, purchase_dm_lt: 0, purchase_dm_na: 0, purchase_dm_ni: 0, purchase_dm_po: 0, purchase_dm_ri: 0, purchase_dm_va: 0, purchase_dm_wa: 2,
   sale_dm_ag: 0, sale_dm_as: 2, sale_dm_ba: 0, sale_dm_de: 0, sale_dm_fl: 0, sale_dm_ga: 0, sale_dm_hi: 0, sale_dm_ht: 0, sale_dm_ic: 0, sale_dm_in: 0, sale_dm_lo: 0, sale_dm_lt: 0, sale_dm_na: 0, sale_dm_ni: 0, sale_dm_po: 0, sale_dm_ri: 2, sale_dm_va: 0, sale_dm_wa: 0
@@ -144,9 +111,6 @@ Good.create(
   name: 'Biochemicals',
   tons: 5,
   base_price: 50000,
-  result: 10,
-  purchase_price: 100,
-  sale_price: 100,
   available_ag: true, available_as: false, available_ba: false, available_de: false, available_fl: false, available_ga: false, available_hi: false, available_ht: false, available_ic: false, available_in: false, available_lo: false, available_lt: false, available_na: false, available_ni: false, available_po: false, available_ri: false, available_va: false, available_wa: true,
   purchase_dm_ag: 1, purchase_dm_as: 0, purchase_dm_ba: 0, purchase_dm_de: 0, purchase_dm_fl: 0, purchase_dm_ga: 0, purchase_dm_hi: 0, purchase_dm_ht: 0, purchase_dm_ic: 0, purchase_dm_in: 0, purchase_dm_lo: 0, purchase_dm_lt: 0, purchase_dm_na: 0, purchase_dm_ni: 0, purchase_dm_po: 0, purchase_dm_ri: 0, purchase_dm_va: 0, purchase_dm_wa: 0,
   sale_dm_ag: 0, sale_dm_as: 0, sale_dm_ba: 0, sale_dm_de: 0, sale_dm_fl: 0, sale_dm_ga: 0, sale_dm_hi: 0, sale_dm_ht: 0, sale_dm_ic: 0, sale_dm_in: 2, sale_dm_lo: 0, sale_dm_lt: 0, sale_dm_na: 0, sale_dm_ni: 0, sale_dm_po: 0, sale_dm_ri: 0, sale_dm_va: 0, sale_dm_wa: 0
@@ -156,9 +120,6 @@ Good.create(
   name: 'Crystals and Gems',
   tons: 5,
   base_price: 20000,
-  result: 11,
-  purchase_price: 95,
-  sale_price: 105,
   available_ag: false, available_as: true, available_ba: false, available_de: true, available_fl: false, available_ga: false, available_hi: false, available_ht: false, available_ic: true, available_in: false, available_lo: false, available_lt: false, available_na: false, available_ni: false, available_po: false, available_ri: false, available_va: false, available_wa: false,
   purchase_dm_ag: 0, purchase_dm_as: 2, purchase_dm_ba: 0, purchase_dm_de: 1, purchase_dm_fl: 0, purchase_dm_ga: 0, purchase_dm_hi: 0, purchase_dm_ht: 0, purchase_dm_ic: 1, purchase_dm_in: 0, purchase_dm_lo: 0, purchase_dm_lt: 0, purchase_dm_na: 0, purchase_dm_ni: 0, purchase_dm_po: 0, purchase_dm_ri: 0, purchase_dm_va: 0, purchase_dm_wa: 0,
   sale_dm_ag: 0, sale_dm_as: 0, sale_dm_ba: 0, sale_dm_de: 0, sale_dm_fl: 0, sale_dm_ga: 0, sale_dm_hi: 0, sale_dm_ht: 0, sale_dm_ic: 0, sale_dm_in: 3, sale_dm_lo: 0, sale_dm_lt: 0, sale_dm_na: 0, sale_dm_ni: 0, sale_dm_po: 0, sale_dm_ri: 2, sale_dm_va: 0, sale_dm_wa: 0
@@ -168,9 +129,6 @@ Good.create(
   name: 'Cybernetics',
   tons: 1,
   base_price: 250000,
-  result: 12,
-  purchase_price: 90,
-  sale_price: 110,
   available_ag: false, available_as: false, available_ba: false, available_de: false, available_fl: false, available_ga: false, available_hi: false, available_ht: true, available_ic: false, available_in: false, available_lo: false, available_lt: false, available_na: false, available_ni: false, available_po: false, available_ri: false, available_va: false, available_wa: false,
   purchase_dm_ag: 0, purchase_dm_as: 0, purchase_dm_ba: 0, purchase_dm_de: 0, purchase_dm_fl: 0, purchase_dm_ga: 0, purchase_dm_hi: 0, purchase_dm_ht: 0, purchase_dm_ic: 0, purchase_dm_in: 0, purchase_dm_lo: 0, purchase_dm_lt: 0, purchase_dm_na: 0, purchase_dm_ni: 0, purchase_dm_po: 0, purchase_dm_ri: 0, purchase_dm_va: 0, purchase_dm_wa: 0,
   sale_dm_ag: 0, sale_dm_as: 1, sale_dm_ba: 0, sale_dm_de: 0, sale_dm_fl: 0, sale_dm_ga: 0, sale_dm_hi: 0, sale_dm_ht: 0, sale_dm_ic: 0, sale_dm_in: 0, sale_dm_lo: 0, sale_dm_lt: 0, sale_dm_na: 0, sale_dm_ni: 0, sale_dm_po: 0, sale_dm_ri: 2, sale_dm_va: 0, sale_dm_wa: 0
@@ -180,9 +138,6 @@ Good.create(
   name: 'Live Animals',
   tons: 10,
   base_price: 10000,
-  result: 13,
-  purchase_price: 85,
-  sale_price: 115,
   available_ag: true, available_as: false, available_ba: false, available_de: false, available_fl: false, available_ga: true, available_hi: false, available_ht: false, available_ic: false, available_in: false, available_lo: false, available_lt: false, available_na: false, available_ni: false, available_po: false, available_ri: false, available_va: false, available_wa: false,
   purchase_dm_ag: 2, purchase_dm_as: 0, purchase_dm_ba: 0, purchase_dm_de: 0, purchase_dm_fl: 0, purchase_dm_ga: 0, purchase_dm_hi: 0, purchase_dm_ht: 0, purchase_dm_ic: 0, purchase_dm_in: 0, purchase_dm_lo: 0, purchase_dm_lt: 0, purchase_dm_na: 0, purchase_dm_ni: 0, purchase_dm_po: 0, purchase_dm_ri: 0, purchase_dm_va: 0, purchase_dm_wa: 0,
   sale_dm_ag: 0, sale_dm_as: 0, sale_dm_ba: 0, sale_dm_de: 0, sale_dm_fl: 0, sale_dm_ga: 0, sale_dm_hi: 0, sale_dm_ht: 0, sale_dm_ic: 0, sale_dm_in: 0, sale_dm_lo: 3, sale_dm_lt: 0, sale_dm_na: 0, sale_dm_ni: 0, sale_dm_po: 0, sale_dm_ri: 0, sale_dm_va: 0, sale_dm_wa: 0
@@ -192,9 +147,6 @@ Good.create(
   name: 'Luxury Consumables',
   tons: 10,
   base_price: 20000,
-  result: 14,
-  purchase_price: 80,
-  sale_price: 120,
   available_ag: true, available_as: false, available_ba: false, available_de: false, available_fl: false, available_ga: true, available_hi: false, available_ht: false, available_ic: false, available_in: false, available_lo: false, available_lt: false, available_na: false, available_ni: false, available_po: false, available_ri: false, available_va: false, available_wa: true,
   purchase_dm_ag: 2, purchase_dm_as: 0, purchase_dm_ba: 0, purchase_dm_de: 0, purchase_dm_fl: 0, purchase_dm_ga: 0, purchase_dm_hi: 0, purchase_dm_ht: 0, purchase_dm_ic: 0, purchase_dm_in: 0, purchase_dm_lo: 0, purchase_dm_lt: 0, purchase_dm_na: 0, purchase_dm_ni: 0, purchase_dm_po: 0, purchase_dm_ri: 0, purchase_dm_va: 0, purchase_dm_wa: 1,
   sale_dm_ag: 0, sale_dm_as: 0, sale_dm_ba: 0, sale_dm_de: 0, sale_dm_fl: 0, sale_dm_ga: 0, sale_dm_hi: 2, sale_dm_ht: 0, sale_dm_ic: 0, sale_dm_in: 0, sale_dm_lo: 0, sale_dm_lt: 0, sale_dm_na: 0, sale_dm_ni: 0, sale_dm_po: 0, sale_dm_ri: 2, sale_dm_va: 0, sale_dm_wa: 0
@@ -204,9 +156,6 @@ Good.create(
   name: 'Luxury Goods',
   tons: 1,
   base_price: 200000,
-  result: 15,
-  purchase_price: 75,
-  sale_price: 125,
   available_ag: false, available_as: false, available_ba: false, available_de: false, available_fl: false, available_ga: false, available_hi: true, available_ht: false, available_ic: false, available_in: false, available_lo: false, available_lt: false, available_na: false, available_ni: false, available_po: false, available_ri: false, available_va: false, available_wa: false,
   purchase_dm_ag: 0, purchase_dm_as: 0, purchase_dm_ba: 0, purchase_dm_de: 0, purchase_dm_fl: 0, purchase_dm_ga: 0, purchase_dm_hi: 0, purchase_dm_ht: 0, purchase_dm_ic: 0, purchase_dm_in: 0, purchase_dm_lo: 0, purchase_dm_lt: 0, purchase_dm_na: 0, purchase_dm_ni: 0, purchase_dm_po: 0, purchase_dm_ri: 0, purchase_dm_va: 0, purchase_dm_wa: 0,
   sale_dm_ag: 0, sale_dm_as: 0, sale_dm_ba: 0, sale_dm_de: 0, sale_dm_fl: 0, sale_dm_ga: 0, sale_dm_hi: 0, sale_dm_ht: 0, sale_dm_ic: 0, sale_dm_in: 0, sale_dm_lo: 0, sale_dm_lt: 0, sale_dm_na: 0, sale_dm_ni: 0, sale_dm_po: 0, sale_dm_ri: 4, sale_dm_va: 0, sale_dm_wa: 0
@@ -216,9 +165,6 @@ Good.create(
   name: 'Medical Supplies',
   tons: 5,
   base_price: 50000,
-  result: 16,
-  purchase_price: 70,
-  sale_price: 135,
   available_ag: false, available_as: false, available_ba: false, available_de: false, available_fl: false, available_ga: false, available_hi: false, available_ht: true, available_ic: false, available_in: false, available_lo: false, available_lt: false, available_na: false, available_ni: false, available_po: false, available_ri: false, available_va: false, available_wa: false,
   purchase_dm_ag: 0, purchase_dm_as: 0, purchase_dm_ba: 0, purchase_dm_de: 0, purchase_dm_fl: 0, purchase_dm_ga: 0, purchase_dm_hi: 0, purchase_dm_ht: 2, purchase_dm_ic: 0, purchase_dm_in: 0, purchase_dm_lo: 0, purchase_dm_lt: 0, purchase_dm_na: 0, purchase_dm_ni: 0, purchase_dm_po: 0, purchase_dm_ri: 0, purchase_dm_va: 0, purchase_dm_wa: 0,
   sale_dm_ag: 0, sale_dm_as: 0, sale_dm_ba: 0, sale_dm_de: 0, sale_dm_fl: 0, sale_dm_ga: 0, sale_dm_hi: 0, sale_dm_ht: 0, sale_dm_ic: 0, sale_dm_in: 2, sale_dm_lo: 0, sale_dm_lt: 0, sale_dm_na: 0, sale_dm_ni: 0, sale_dm_po: 1, sale_dm_ri: 1, sale_dm_va: 0, sale_dm_wa: 0
@@ -228,9 +174,6 @@ Good.create(
   name: 'Petrochemicals',
   tons: 10,
   base_price: 10000,
-  result: 17,
-  purchase_price: 65,
-  sale_price: 150,
   available_ag: false, available_as: false, available_ba: false, available_de: true, available_fl: true, available_ga: false, available_hi: false, available_ht: false, available_ic: true, available_in: false, available_lo: false, available_lt: false, available_na: false, available_ni: false, available_po: false, available_ri: false, available_va: false, available_wa: true,
   purchase_dm_ag: 0, purchase_dm_as: 0, purchase_dm_ba: 0, purchase_dm_de: 2, purchase_dm_fl: 0, purchase_dm_ga: 0, purchase_dm_hi: 0, purchase_dm_ht: 0, purchase_dm_ic: 0, purchase_dm_in: 0, purchase_dm_lo: 0, purchase_dm_lt: 0, purchase_dm_na: 0, purchase_dm_ni: 0, purchase_dm_po: 0, purchase_dm_ri: 0, purchase_dm_va: 0, purchase_dm_wa: 0,
   sale_dm_ag: 1, sale_dm_as: 0, sale_dm_ba: 0, sale_dm_de: 0, sale_dm_fl: 0, sale_dm_ga: 0, sale_dm_hi: 0, sale_dm_ht: 0, sale_dm_ic: 0, sale_dm_in: 2, sale_dm_lo: 0, sale_dm_lt: 2, sale_dm_na: 0, sale_dm_ni: 0, sale_dm_po: 0, sale_dm_ri: 0, sale_dm_va: 0, sale_dm_wa: 0
@@ -240,9 +183,6 @@ Good.create(
   name: 'Pharmaceuticals',
   tons: 1,
   base_price: 100000,
-  result: 18,
-  purchase_price: 55,
-  sale_price: 175,
   available_ag: false, available_as: true, available_ba: false, available_de: true, available_fl: false, available_ga: false, available_hi: true, available_ht: false, available_ic: false, available_in: false, available_lo: false, available_lt: false, available_na: false, available_ni: false, available_po: false, available_ri: false, available_va: false, available_wa: true,
   purchase_dm_ag: 0, purchase_dm_as: 2, purchase_dm_ba: 0, purchase_dm_de: 0, purchase_dm_fl: 0, purchase_dm_ga: 0, purchase_dm_hi: 1, purchase_dm_ht: 0, purchase_dm_ic: 0, purchase_dm_in: 0, purchase_dm_lo: 0, purchase_dm_lt: 0, purchase_dm_na: 0, purchase_dm_ni: 0, purchase_dm_po: 0, purchase_dm_ri: 0, purchase_dm_va: 0, purchase_dm_wa: 0,
   sale_dm_ag: 0, sale_dm_as: 0, sale_dm_ba: 0, sale_dm_de: 0, sale_dm_fl: 0, sale_dm_ga: 0, sale_dm_hi: 0, sale_dm_ht: 0, sale_dm_ic: 0, sale_dm_in: 0, sale_dm_lo: 0, sale_dm_lt: 1, sale_dm_na: 0, sale_dm_ni: 0, sale_dm_po: 0, sale_dm_ri: 2, sale_dm_va: 0, sale_dm_wa: 0
@@ -252,9 +192,6 @@ Good.create(
   name: 'Polymers',
   tons: 10,
   base_price: 7000,
-  result: 19,
-  purchase_price: 50,
-  sale_price: 200,
   available_ag: false, available_as: false, available_ba: false, available_de: false, available_fl: false, available_ga: false, available_hi: false, available_ht: false, available_ic: false, available_in: true, available_lo: false, available_lt: false, available_na: false, available_ni: false, available_po: false, available_ri: false, available_va: false, available_wa: false,
   purchase_dm_ag: 0, purchase_dm_as: 0, purchase_dm_ba: 0, purchase_dm_de: 0, purchase_dm_fl: 0, purchase_dm_ga: 0, purchase_dm_hi: 0, purchase_dm_ht: 0, purchase_dm_ic: 0, purchase_dm_in: 0, purchase_dm_lo: 0, purchase_dm_lt: 0, purchase_dm_na: 0, purchase_dm_ni: 0, purchase_dm_po: 0, purchase_dm_ri: 0, purchase_dm_va: 0, purchase_dm_wa: 0,
   sale_dm_ag: 0, sale_dm_as: 0, sale_dm_ba: 0, sale_dm_de: 0, sale_dm_fl: 0, sale_dm_ga: 0, sale_dm_hi: 0, sale_dm_ht: 0, sale_dm_ic: 0, sale_dm_in: 0, sale_dm_lo: 0, sale_dm_lt: 0, sale_dm_na: 0, sale_dm_ni: 0, sale_dm_po: 0, sale_dm_ri: 2, sale_dm_va: 0, sale_dm_wa: 0
@@ -264,9 +201,6 @@ Good.create(
   name: 'Precious Metals',
   tons: 1,
   base_price: 50000,
-  result: 20,
-  purchase_price: 40,
-  sale_price: 300,
   available_ag: false, available_as: true, available_ba: false, available_de: true, available_fl: true, available_ga: false, available_hi: true, available_ht: false, available_ic: false, available_in: false, available_lo: false, available_lt: false, available_na: false, available_ni: false, available_po: false, available_ri: false, available_va: false, available_wa: false,
   purchase_dm_ag: 0, purchase_dm_as: 3, purchase_dm_ba: 0, purchase_dm_de: 1, purchase_dm_fl: 0, purchase_dm_ga: 0, purchase_dm_hi: 0, purchase_dm_ht: 0, purchase_dm_ic: 2, purchase_dm_in: 0, purchase_dm_lo: 0, purchase_dm_lt: 0, purchase_dm_na: 0, purchase_dm_ni: 0, purchase_dm_po: 0, purchase_dm_ri: 0, purchase_dm_va: 0, purchase_dm_wa: 0,
   sale_dm_ag: 0, sale_dm_as: 0, sale_dm_ba: 0, sale_dm_de: 0, sale_dm_fl: 0, sale_dm_ga: 0, sale_dm_hi: 0, sale_dm_ht: 1, sale_dm_ic: 0, sale_dm_in: 2, sale_dm_lo: 0, sale_dm_lt: 0, sale_dm_na: 0, sale_dm_ni: 0, sale_dm_po: 0, sale_dm_ri: 3, sale_dm_va: 0, sale_dm_wa: 0
@@ -276,9 +210,6 @@ Good.create(
   name: 'Radioactives',
   tons: 1,
   base_price: 1000000,
-  result: 21,
-  purchase_price: 25,
-  sale_price: 400,
   available_ag: false, available_as: true, available_ba: false, available_de: true, available_fl: false, available_ga: false, available_hi: false, available_ht: false, available_ic: false, available_in: false, available_lo: true, available_lt: false, available_na: false, available_ni: false, available_po: false, available_ri: false, available_va: false, available_wa: false,
   purchase_dm_ag: 0, purchase_dm_as: 2, purchase_dm_ba: 0, purchase_dm_de: 0, purchase_dm_fl: 0, purchase_dm_ga: 0, purchase_dm_hi: 0, purchase_dm_ht: 0, purchase_dm_ic: 0, purchase_dm_in: 0, purchase_dm_lo: -4, purchase_dm_lt: 0, purchase_dm_na: 0, purchase_dm_ni: 0, purchase_dm_po: 0, purchase_dm_ri: 0, purchase_dm_va: 0, purchase_dm_wa: 0,
   sale_dm_ag: -3, sale_dm_as: 0, sale_dm_ba: 0, sale_dm_de: 0, sale_dm_fl: 0, sale_dm_ga: 0, sale_dm_hi: 0, sale_dm_ht: 1, sale_dm_ic: 0, sale_dm_in: 3, sale_dm_lo: 0, sale_dm_lt: 0, sale_dm_na: 0, sale_dm_ni: -2, sale_dm_po: 0, sale_dm_ri: 0, sale_dm_va: 0, sale_dm_wa: 0
@@ -288,9 +219,6 @@ Good.create(
   name: 'Robots',
   tons: 5,
   base_price: 400000,
-  result: 0,
-  purchase_price: 0,
-  sale_price: 0,
   available_ag: false, available_as: false, available_ba: false, available_de: false, available_fl: false, available_ga: false, available_hi: false, available_ht: true, available_ic: false, available_in: true, available_lo: false, available_lt: false, available_na: false, available_ni: false, available_po: false, available_ri: false, available_va: false, available_wa: false,
   purchase_dm_ag: 0, purchase_dm_as: 0, purchase_dm_ba: 0, purchase_dm_de: 0, purchase_dm_fl: 0, purchase_dm_ga: 0, purchase_dm_hi: 0, purchase_dm_ht: 0, purchase_dm_ic: 0, purchase_dm_in: 0, purchase_dm_lo: 0, purchase_dm_lt: 0, purchase_dm_na: 0, purchase_dm_ni: 0, purchase_dm_po: 0, purchase_dm_ri: 0, purchase_dm_va: 0, purchase_dm_wa: 0,
   sale_dm_ag: 2, sale_dm_as: 0, sale_dm_ba: 0, sale_dm_de: 0, sale_dm_fl: 0, sale_dm_ga: 0, sale_dm_hi: 0, sale_dm_ht: 1, sale_dm_ic: 0, sale_dm_in: 0, sale_dm_lo: 0, sale_dm_lt: 0, sale_dm_na: 0, sale_dm_ni: 0, sale_dm_po: 0, sale_dm_ri: 0, sale_dm_va: 0, sale_dm_wa: 0
@@ -300,9 +228,6 @@ Good.create(
   name: 'Spices',
   tons: 5,
   base_price: 6000,
-  result: 0,
-  purchase_price: 0,
-  sale_price: 0,
   available_ag: false, available_as: false, available_ba: false, available_de: true, available_fl: false, available_ga: true, available_hi: false, available_ht: false, available_ic: false, available_in: false, available_lo: false, available_lt: false, available_na: false, available_ni: false, available_po: false, available_ri: false, available_va: false, available_wa: true,
   purchase_dm_ag: 0, purchase_dm_as: 0, purchase_dm_ba: 0, purchase_dm_de: 2, purchase_dm_fl: 0, purchase_dm_ga: 0, purchase_dm_hi: 0, purchase_dm_ht: 0, purchase_dm_ic: 0, purchase_dm_in: 0, purchase_dm_lo: 0, purchase_dm_lt: 0, purchase_dm_na: 0, purchase_dm_ni: 0, purchase_dm_po: 0, purchase_dm_ri: 0, purchase_dm_va: 0, purchase_dm_wa: 0,
   sale_dm_ag: 0, sale_dm_as: 0, sale_dm_ba: 0, sale_dm_de: 0, sale_dm_fl: 0, sale_dm_ga: 0, sale_dm_hi: 2, sale_dm_ht: 0, sale_dm_ic: 0, sale_dm_in: 0, sale_dm_lo: 0, sale_dm_lt: 0, sale_dm_na: 0, sale_dm_ni: 0, sale_dm_po: 3, sale_dm_ri: 3, sale_dm_va: 0, sale_dm_wa: 0
@@ -312,9 +237,6 @@ Good.create(
   name: 'Textiles',
   tons: 10,
   base_price: 3000,
-  result: 0,
-  purchase_price: 0,
-  sale_price: 0,
   available_ag: true, available_as: false, available_ba: false, available_de: false, available_fl: false, available_ga: false, available_hi: false, available_ht: false, available_ic: false, available_in: false, available_lo: false, available_lt: false, available_na: false, available_ni: true, available_po: false, available_ri: false, available_va: false, available_wa: false,
   purchase_dm_ag: 7, purchase_dm_as: 0, purchase_dm_ba: 0, purchase_dm_de: 0, purchase_dm_fl: 0, purchase_dm_ga: 0, purchase_dm_hi: 0, purchase_dm_ht: 0, purchase_dm_ic: 0, purchase_dm_in: 0, purchase_dm_lo: 0, purchase_dm_lt: 0, purchase_dm_na: 0, purchase_dm_ni: 0, purchase_dm_po: 0, purchase_dm_ri: 0, purchase_dm_va: 0, purchase_dm_wa: 0,
   sale_dm_ag: 0, sale_dm_as: 0, sale_dm_ba: 0, sale_dm_de: 0, sale_dm_fl: 0, sale_dm_ga: 0, sale_dm_hi: 3, sale_dm_ht: 0, sale_dm_ic: 0, sale_dm_in: 0, sale_dm_lo: 0, sale_dm_lt: 0, sale_dm_na: 2, sale_dm_ni: 0, sale_dm_po: 0, sale_dm_ri: 0, sale_dm_va: 0, sale_dm_wa: 0
@@ -324,9 +246,6 @@ Good.create(
   name: 'Uncommon Ore',
   tons: 10,
   base_price: 5000,
-  result: 0,
-  purchase_price: 0,
-  sale_price: 0,
   available_ag: false, available_as: true, available_ba: false, available_de: false, available_fl: false, available_ga: false, available_hi: false, available_ht: false, available_ic: true, available_in: false, available_lo: false, available_lt: false, available_na: false, available_ni: false, available_po: false, available_ri: false, available_va: false, available_wa: false,
   purchase_dm_ag: 0, purchase_dm_as: 4, purchase_dm_ba: 0, purchase_dm_de: 0, purchase_dm_fl: 0, purchase_dm_ga: 0, purchase_dm_hi: 0, purchase_dm_ht: 0, purchase_dm_ic: 0, purchase_dm_in: 0, purchase_dm_lo: 0, purchase_dm_lt: 0, purchase_dm_na: 0, purchase_dm_ni: 0, purchase_dm_po: 0, purchase_dm_ri: 0, purchase_dm_va: 0, purchase_dm_wa: 0,
   sale_dm_ag: 0, sale_dm_as: 0, sale_dm_ba: 0, sale_dm_de: 0, sale_dm_fl: 0, sale_dm_ga: 0, sale_dm_hi: 0, sale_dm_ht: 0, sale_dm_ic: 0, sale_dm_in: 3, sale_dm_lo: 0, sale_dm_lt: 0, sale_dm_na: 0, sale_dm_ni: 1, sale_dm_po: 0, sale_dm_ri: 0, sale_dm_va: 0, sale_dm_wa: 0
@@ -336,9 +255,6 @@ Good.create(
   name: 'Uncommon Raw Materials',
   tons: 10,
   base_price: 20000,
-  result: 0,
-  purchase_price: 0,
-  sale_price: 0,
   available_ag: true, available_as: false, available_ba: false, available_de: true, available_fl: false, available_ga: false, available_hi: false, available_ht: false, available_ic: false, available_in: false, available_lo: false, available_lt: false, available_na: false, available_ni: false, available_po: false, available_ri: false, available_va: false, available_wa: true,
   purchase_dm_ag: 2, purchase_dm_as: 0, purchase_dm_ba: 0, purchase_dm_de: 0, purchase_dm_fl: 0, purchase_dm_ga: 0, purchase_dm_hi: 0, purchase_dm_ht: 0, purchase_dm_ic: 0, purchase_dm_in: 0, purchase_dm_lo: 0, purchase_dm_lt: 0, purchase_dm_na: 0, purchase_dm_ni: 0, purchase_dm_po: 0, purchase_dm_ri: 0, purchase_dm_va: 0, purchase_dm_wa: 1,
   sale_dm_ag: 0, sale_dm_as: 0, sale_dm_ba: 0, sale_dm_de: 0, sale_dm_fl: 0, sale_dm_ga: 0, sale_dm_hi: 0, sale_dm_ht: 1, sale_dm_ic: 0, sale_dm_in: 2, sale_dm_lo: 0, sale_dm_lt: 0, sale_dm_na: 0, sale_dm_ni: 0, sale_dm_po: 0, sale_dm_ri: 0, sale_dm_va: 0, sale_dm_wa: 0
@@ -348,9 +264,6 @@ Good.create(
   name: 'Wood',
   tons: 10,
   base_price: 1000,
-  result: 0,
-  purchase_price: 0,
-  sale_price: 0,
   available_ag: true, available_as: false, available_ba: false, available_de: false, available_fl: false, available_ga: true, available_hi: false, available_ht: false, available_ic: false, available_in: false, available_lo: false, available_lt: false, available_na: false, available_ni: false, available_po: false, available_ri: false, available_va: false, available_wa: false,
   purchase_dm_ag: 6, purchase_dm_as: 0, purchase_dm_ba: 0, purchase_dm_de: 0, purchase_dm_fl: 0, purchase_dm_ga: 0, purchase_dm_hi: 0, purchase_dm_ht: 0, purchase_dm_ic: 0, purchase_dm_in: 0, purchase_dm_lo: 0, purchase_dm_lt: 0, purchase_dm_na: 0, purchase_dm_ni: 0, purchase_dm_po: 0, purchase_dm_ri: 0, purchase_dm_va: 0, purchase_dm_wa: 0,
   sale_dm_ag: 0, sale_dm_as: 0, sale_dm_ba: 0, sale_dm_de: 0, sale_dm_fl: 0, sale_dm_ga: 0, sale_dm_hi: 0, sale_dm_ht: 0, sale_dm_ic: 0, sale_dm_in: 1, sale_dm_lo: 0, sale_dm_lt: 0, sale_dm_na: 0, sale_dm_ni: 0, sale_dm_po: 0, sale_dm_ri: 2, sale_dm_va: 0, sale_dm_wa: 0
@@ -360,9 +273,6 @@ Good.create(
   name: 'Vehicles',
   tons: 10,
   base_price: 15000,
-  result: 0,
-  purchase_price: 0,
-  sale_price: 0,
   available_ag: false, available_as: false, available_ba: false, available_de: false, available_fl: false, available_ga: false, available_hi: false, available_ht: true, available_ic: false, available_in: true, available_lo: false, available_lt: false, available_na: false, available_ni: false, available_po: false, available_ri: false, available_va: false, available_wa: false,
   purchase_dm_ag: 0, purchase_dm_as: 0, purchase_dm_ba: 0, purchase_dm_de: 0, purchase_dm_fl: 0, purchase_dm_ga: 0, purchase_dm_hi: 0, purchase_dm_ht: 1, purchase_dm_ic: 0, purchase_dm_in: 2, purchase_dm_lo: 0, purchase_dm_lt: 0, purchase_dm_na: 0, purchase_dm_ni: 0, purchase_dm_po: 0, purchase_dm_ri: 0, purchase_dm_va: 0, purchase_dm_wa: 0,
   sale_dm_ag: 0, sale_dm_as: 0, sale_dm_ba: 0, sale_dm_de: 0, sale_dm_fl: 0, sale_dm_ga: 0, sale_dm_hi: 1, sale_dm_ht: 0, sale_dm_ic: 0, sale_dm_in: 0, sale_dm_lo: 0, sale_dm_lt: 0, sale_dm_na: 0, sale_dm_ni: 2, sale_dm_po: 0, sale_dm_ri: 0, sale_dm_va: 0, sale_dm_wa: 0
@@ -372,9 +282,6 @@ Good.create(
   name: 'Illegal Biochemicals',
   tons: 5,
   base_price: 50000,
-  result: 0,
-  purchase_price: 0,
-  sale_price: 0,
   available_ag: true, available_as: false, available_ba: false, available_de: false, available_fl: false, available_ga: false, available_hi: false, available_ht: false, available_ic: false, available_in: false, available_lo: false, available_lt: false, available_na: false, available_ni: false, available_po: false, available_ri: false, available_va: false, available_wa: true,
   purchase_dm_ag: 0, purchase_dm_as: 0, purchase_dm_ba: 0, purchase_dm_de: 0, purchase_dm_fl: 0, purchase_dm_ga: 0, purchase_dm_hi: 0, purchase_dm_ht: 0, purchase_dm_ic: 0, purchase_dm_in: 0, purchase_dm_lo: 0, purchase_dm_lt: 0, purchase_dm_na: 0, purchase_dm_ni: 0, purchase_dm_po: 0, purchase_dm_ri: 0, purchase_dm_va: 0, purchase_dm_wa: 2,
   sale_dm_ag: 0, sale_dm_as: 0, sale_dm_ba: 0, sale_dm_de: 0, sale_dm_fl: 0, sale_dm_ga: 0, sale_dm_hi: 0, sale_dm_ht: 0, sale_dm_ic: 0, sale_dm_in: 6, sale_dm_lo: 0, sale_dm_lt: 0, sale_dm_na: 0, sale_dm_ni: 0, sale_dm_po: 0, sale_dm_ri: 0, sale_dm_va: 0, sale_dm_wa: 0
@@ -384,9 +291,6 @@ Good.create(
   name: 'Illegal Cybernetics',
   tons: 1,
   base_price: 250000,
-  result: 0,
-  purchase_price: 0,
-  sale_price: 0,
   available_ag: false, available_as: false, available_ba: false, available_de: false, available_fl: false, available_ga: false, available_hi: false, available_ht: true, available_ic: false, available_in: false, available_lo: false, available_lt: false, available_na: false, available_ni: false, available_po: false, available_ri: false, available_va: false, available_wa: false,
   purchase_dm_ag: 0, purchase_dm_as: 0, purchase_dm_ba: 0, purchase_dm_de: 0, purchase_dm_fl: 0, purchase_dm_ga: 0, purchase_dm_hi: 0, purchase_dm_ht: 0, purchase_dm_ic: 0, purchase_dm_in: 0, purchase_dm_lo: 0, purchase_dm_lt: 0, purchase_dm_na: 0, purchase_dm_ni: 0, purchase_dm_po: 0, purchase_dm_ri: 0, purchase_dm_va: 0, purchase_dm_wa: 0,
   sale_dm_ag: 0, sale_dm_as: 4, sale_dm_ba: 0, sale_dm_de: 0, sale_dm_fl: 0, sale_dm_ga: 0, sale_dm_hi: 0, sale_dm_ht: 0, sale_dm_ic: 0, sale_dm_in: 0, sale_dm_lo: 0, sale_dm_lt: 0, sale_dm_na: 0, sale_dm_ni: 0, sale_dm_po: 0, sale_dm_ri: 8, sale_dm_va: 0, sale_dm_wa: 0
@@ -396,9 +300,6 @@ Good.create(
   name: 'Illegal Drugs',
   tons: 1,
   base_price: 100000,
-  result: 0,
-  purchase_price: 0,
-  sale_price: 0,
   available_ag: false, available_as: true, available_ba: false, available_de: true, available_fl: false, available_ga: false, available_hi: true, available_ht: false, available_ic: false, available_in: false, available_lo: false, available_lt: false, available_na: false, available_ni: false, available_po: false, available_ri: false, available_va: false, available_wa: true,
   purchase_dm_ag: 0, purchase_dm_as: 0, purchase_dm_ba: 0, purchase_dm_de: 0, purchase_dm_fl: 0, purchase_dm_ga: 0, purchase_dm_hi: 0, purchase_dm_ht: 0, purchase_dm_ic: 0, purchase_dm_in: 0, purchase_dm_lo: 0, purchase_dm_lt: 0, purchase_dm_na: 0, purchase_dm_ni: 0, purchase_dm_po: 0, purchase_dm_ri: 0, purchase_dm_va: 0, purchase_dm_wa: 0,
   sale_dm_ag: 0, sale_dm_as: 0, sale_dm_ba: 0, sale_dm_de: 0, sale_dm_fl: 0, sale_dm_ga: 0, sale_dm_hi: 6, sale_dm_ht: 0, sale_dm_ic: 0, sale_dm_in: 0, sale_dm_lo: 0, sale_dm_lt: 0, sale_dm_na: 0, sale_dm_ni: 0, sale_dm_po: 0, sale_dm_ri: 6, sale_dm_va: 0, sale_dm_wa: 0
@@ -408,9 +309,6 @@ Good.create(
   name: 'Illegal Luxuries',
   tons: 1,
   base_price: 50000,
-  result: 0,
-  purchase_price: 0,
-  sale_price: 0,
   available_ag: true, available_as: false, available_ba: false, available_de: false, available_fl: false, available_ga: true, available_hi: false, available_ht: false, available_ic: false, available_in: false, available_lo: false, available_lt: false, available_na: false, available_ni: false, available_po: false, available_ri: false, available_va: false, available_wa: true,
   purchase_dm_ag: 2, purchase_dm_as: 0, purchase_dm_ba: 0, purchase_dm_de: 0, purchase_dm_fl: 0, purchase_dm_ga: 0, purchase_dm_hi: 0, purchase_dm_ht: 0, purchase_dm_ic: 0, purchase_dm_in: 0, purchase_dm_lo: 0, purchase_dm_lt: 0, purchase_dm_na: 0, purchase_dm_ni: 0, purchase_dm_po: 0, purchase_dm_ri: 0, purchase_dm_va: 0, purchase_dm_wa: 1,
   sale_dm_ag: 0, sale_dm_as: 0, sale_dm_ba: 0, sale_dm_de: 0, sale_dm_fl: 0, sale_dm_ga: 0, sale_dm_hi: 4, sale_dm_ht: 0, sale_dm_ic: 0, sale_dm_in: 0, sale_dm_lo: 0, sale_dm_lt: 0, sale_dm_na: 0, sale_dm_ni: 0, sale_dm_po: 0, sale_dm_ri: 6, sale_dm_va: 0, sale_dm_wa: 0
@@ -420,9 +318,6 @@ Good.create(
   name: 'Illegal Weapons',
   tons: 5,
   base_price: 150000,
-  result: 0,
-  purchase_price: 0,
-  sale_price: 0,
   available_ag: false, available_as: false, available_ba: false, available_de: false, available_fl: false, available_ga: false, available_hi: false, available_ht: true, available_ic: false, available_in: true, available_lo: false, available_lt: false, available_na: false, available_ni: false, available_po: false, available_ri: false, available_va: false, available_wa: false,
   purchase_dm_ag: 0, purchase_dm_as: 0, purchase_dm_ba: 0, purchase_dm_de: 0, purchase_dm_fl: 0, purchase_dm_ga: 0, purchase_dm_hi: 0, purchase_dm_ht: 2, purchase_dm_ic: 0, purchase_dm_in: 0, purchase_dm_lo: 0, purchase_dm_lt: 0, purchase_dm_na: 0, purchase_dm_ni: 0, purchase_dm_po: 0, purchase_dm_ri: 0, purchase_dm_va: 0, purchase_dm_wa: 0,
   sale_dm_ag: 0, sale_dm_as: 0, sale_dm_ba: 0, sale_dm_de: 0, sale_dm_fl: 0, sale_dm_ga: 0, sale_dm_hi: 0, sale_dm_ht: 0, sale_dm_ic: 0, sale_dm_in: 0, sale_dm_lo: 0, sale_dm_lt: 0, sale_dm_na: 0, sale_dm_ni: 0, sale_dm_po: 6, sale_dm_ri: 0, sale_dm_va: 0, sale_dm_wa: 0
@@ -432,9 +327,6 @@ Good.create(
   name: 'Exotics',
   tons: 1,
   base_price: 1,
-  result: 0,
-  purchase_price: 0,
-  sale_price: 0,
   available_ag: false, available_as: false, available_ba: false, available_de: false, available_fl: false, available_ga: false, available_hi: false, available_ht: false, available_ic: false, available_in: false, available_lo: false, available_lt: false, available_na: false, available_ni: false, available_po: false, available_ri: false, available_va: false, available_wa: false,
   purchase_dm_ag: 0, purchase_dm_as: 0, purchase_dm_ba: 0, purchase_dm_de: 0, purchase_dm_fl: 0, purchase_dm_ga: 0, purchase_dm_hi: 0, purchase_dm_ht: 0, purchase_dm_ic: 0, purchase_dm_in: 0, purchase_dm_lo: 0, purchase_dm_lt: 0, purchase_dm_na: 0, purchase_dm_ni: 0, purchase_dm_po: 0, purchase_dm_ri: 0, purchase_dm_va: 0, purchase_dm_wa: 0,
   sale_dm_ag: 0, sale_dm_as: 0, sale_dm_ba: 0, sale_dm_de: 0, sale_dm_fl: 0, sale_dm_ga: 0, sale_dm_hi: 0, sale_dm_ht: 0, sale_dm_ic: 0, sale_dm_in: 0, sale_dm_lo: 0, sale_dm_lt: 0, sale_dm_na: 0, sale_dm_ni: 0, sale_dm_po: 0, sale_dm_ri: 0, sale_dm_va: 0, sale_dm_wa: 0

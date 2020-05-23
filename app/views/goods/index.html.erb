@@ -5,7 +5,7 @@
 <table class="goods-table" border="1">
   <thead>
     <tr>
-      <th colspan="6"></th>
+      <th colspan="3"></th>
       <th colspan="18">Available</th>
       <th colspan="18">Purchase DM</th>
       <th colspan="18">Sale DM</th>
@@ -14,9 +14,6 @@
       <th class="name">Name</th>
       <th>Tons</th>
       <th>Base Price</th>
-      <th>Result</th>
-      <th>Purchase Price</th>
-      <th>Sale Price</th>
 
       <% 3.times.each do %>
         <% trade_classes_str.each do |c| %>
@@ -34,9 +31,6 @@
         <td class="name"><%= good.name %></td>
         <td><%= number_with_delimiter good.tons %></td>
         <td><%= number_with_delimiter good.base_price %></td>
-        <td><%= good.result %></td>
-        <td><%= number_with_delimiter good.purchase_price %>%</td>
-        <td><%= number_with_delimiter good.sale_price %>%</td>
 
         <% trade_classes_sym.each do |c| %>
           <td class="fixed"><%= yes_no_emoji good.send(:"available_#{c}") %></td>
