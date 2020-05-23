@@ -64,7 +64,7 @@ class TradeClassesCalculator
   end
 
   def in?
-    atmosphere.between?(0, 9) && population > 8
+    [0, 1, 2, 4, 7, 9].include?(atmosphere) && population > 8
   end
 
   def lo?
