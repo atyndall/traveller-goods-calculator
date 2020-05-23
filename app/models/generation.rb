@@ -8,7 +8,7 @@ class Generation < ApplicationRecord
   def create_result
     self.result =
       GoodsGenerator
-        .new(world.trade_classes.to_a)
+        .new(world.trade_classes.to_a, broker_skill)
         .result
   end
 end

@@ -16,9 +16,9 @@
     <% @generation.result.each do |line| %>
       <tr>
         <td><%= line['name'] %></td>
-        <td><%= number_with_delimiter line['tons_available'] %></td>
-        <td><%= number_with_delimiter line['purchase_price'] %></td>
-        <td><%= number_with_delimiter line['sale_price'] %></td>
+        <td><%= number_with_delimiter line['tons'] %></td>
+        <td><%= number_with_delimiter line['purchase'] %></td>
+        <td><%= number_with_delimiter line['sale'] %></td>
       </tr>
     <% end %>
   </tbody>
