@@ -41,6 +41,6 @@ class GenerationsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def generation_params
-      params.require(:generation).permit(:world_id)
+      params.require(:generation).permit(:world_id, :broker_skill)
     end
 end

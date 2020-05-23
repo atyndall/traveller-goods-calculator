@@ -28,6 +28,11 @@
     <%= form.grouped_collection_select(:world_id, @subsectors, :worlds, :name, :id, :name) %>
   </div>
 
+  <div class="field">
+    <%= form.label :broker_skill %>
+    <%= form.number_field :broker_skill %>
+  </div>
+
   <div class="actions">
     <%= submit_tag 'Generate' %>
   </div>
