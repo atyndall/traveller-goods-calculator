@@ -105,6 +105,6 @@ ActiveRecord::Schema.define(version: 2020_05_22_100119) do
     t.index ["subsector_id"], name: "index_worlds_on_subsector_id"
   end
 
-  add_foreign_key "generations", "worlds"
-  add_foreign_key "worlds", "subsectors"
+  add_foreign_key "generations", "worlds", on_delete: :cascade
+  add_foreign_key "worlds", "subsectors", on_delete: :cascade
 end
