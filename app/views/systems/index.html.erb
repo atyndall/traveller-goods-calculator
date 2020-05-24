@@ -16,7 +16,7 @@
     <% @systems.each do |system| %>
       <tr>
         <td><%= system.subsector.name %></td>
-        <td><%= '%02d%02d' % [system.q, system.r] %></td>
+        <td><%= system.coordinates %></td>
         <td><%= system.world&.name || '-' %>
         <td><%= link_to 'Show', system %></td>
         <td><%= link_to 'Edit', edit_system_path(system) %></td>

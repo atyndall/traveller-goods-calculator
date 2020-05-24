@@ -53,6 +53,6 @@ class SystemsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def system_params
-      params.require(:system).permit(:subsector_id, :q, :r)
+      params.require(:system).permit(:subsector_id, :coordinates)
     end
 end

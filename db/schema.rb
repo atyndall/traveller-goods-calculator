@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_24_090119) do
+ActiveRecord::Schema.define(version: 2020_05_21_100121) do
 
   create_table "generations", force: :cascade do |t|
     t.integer "world_id", null: false
@@ -83,25 +83,42 @@ ActiveRecord::Schema.define(version: 2020_05_24_090119) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "subsectors", force: :cascade do |t|
+  create_table "sectors", force: :cascade do |t|
     t.string "name", null: false
+    t.integer "x", limit: 1, null: false
+    t.integer "y", limit: 1, null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["x", "y"], name: "index_sectors_on_x_and_y", unique: true
+  end
+
+  create_table "subsectors", force: :cascade do |t|
+    t.integer "sector_id", null: false
+    t.string "name", null: false
+    t.integer "x", limit: 1, null: false
+    t.integer "y", limit: 1, null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["sector_id", "x", "y"], name: "index_subsectors_on_sector_id_and_x_and_y", unique: true
+    t.index ["sector_id"], name: "index_subsectors_on_sector_id"
   end
 
   create_table "systems", force: :cascade do |t|
     t.integer "subsector_id", null: false
     t.integer "q", limit: 1, null: false
     t.integer "r", limit: 1, null: false
+    t.integer "global_q", limit: 2, null: false
+    t.integer "global_r", limit: 2, null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["global_q", "global_r"], name: "index_systems_on_global_q_and_global_r", unique: true
     t.index ["subsector_id", "q", "r"], name: "index_systems_on_subsector_id_and_q_and_r", unique: true
     t.index ["subsector_id"], name: "index_systems_on_subsector_id"
   end
 
   create_table "worlds", force: :cascade do |t|
-    t.string "name", null: false
     t.integer "system_id", null: false
+    t.string "name", null: false
     t.string "starport", limit: 1, null: false
     t.integer "size", limit: 1, null: false
     t.integer "atmosphere", limit: 1, null: false
@@ -116,6 +133,7 @@ ActiveRecord::Schema.define(version: 2020_05_24_090119) do
   end
 
   add_foreign_key "generations", "worlds", on_delete: :cascade
+  add_foreign_key "subsectors", "sectors", on_delete: :cascade
   add_foreign_key "systems", "subsectors", on_delete: :cascade
   add_foreign_key "worlds", "systems", on_delete: :cascade
 end

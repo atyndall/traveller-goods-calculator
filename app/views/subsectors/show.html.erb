@@ -6,14 +6,28 @@
 </p>
 
 <div class="honeycomb">
-  <% (1..10).to_a.each do |r| %>
+  <div class="ibws-fix">
+    <% 10.times.each do %>
+      <a class="hexagon border">
+        <div class="hexagontent">
+          <span class="coordinates">Border Square</span>
+        </div>
+      </a>
+    <% end %>
+  </div>
+  <% System::R_RANGE.to_a.each do |r| %>
     <div class="ibws-fix">
-      <% (1..8).to_a.each do |q| %>
+      <a class="hexagon border">
+        <div class="hexagontent">
+          <span class="coordinates">Border Square</span>
+        </div>
+      </a>
+      <% System::Q_RANGE.to_a.each do |q| %>
         <% s = @hex_map[[q, r]] %>
         <% if s&.world.present? %>
           <%= link_to world_path(s.world), class: 'hexagon' do %>
             <div class="hexagontent">
-              <span class="coordinates"><%= '%02d' % q %><%= '%02d' % r %></span>
+              <span class="coordinates"><%= s.coordinates %></span>
               <br>
               <%= s.world.name %>
             </div>
@@ -21,19 +35,34 @@
         <% elsif s.present? %>
           <%= link_to new_world_path(system_id: s.id), class: 'hexagon' do %>
             <div class="hexagontent">
-              <span class="coordinates"><%= '%02d' % q %><%= '%02d' % r %></span>
+              <span class="coordinates"><%= s.coordinates %></span>
             </div>
           <% end %>
         <% else %>
           <%= link_to systems_path(system: {subsector_id: @subsector.id, q: q, r: r}), method: :post, class: 'hexagon' do %>
             <div class="hexagontent">
-              <span class="coordinates"><%= '%02d' % q %><%= '%02d' % r %></span>
+              <span class="coordinates"><%= '%02d%02d' % [q, r] %></span>
             </div>
           <% end %>
         <% end %>
       <% end %>
+      <a class="hexagon border">
+        <div class="hexagontent">
+          <span class="coordinates">Border Square</span>
+        </div>
+      </a>
     </div>
+
   <% end %>
+  <div class="ibws-fix">
+    <% 10.times.each do %>
+      <a class="hexagon border">
+        <div class="hexagontent">
+          <span class="coordinates">Border Square</span>
+        </div>
+      </a>
+    <% end %>
+  </div>
 </div>
 
 <%= link_to 'Edit', edit_subsector_path(@subsector) %> |

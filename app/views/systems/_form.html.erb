@@ -17,13 +17,8 @@
   </div>
 
   <div class="field">
-    <%= form.label :q %> (first number)
-    <%= form.number_field :q, min: 1, max: 8 %>
-  </div>
-
-  <div class="field">
-    <%= form.label :r %> (second number)
-    <%= form.number_field :r, min: 1, max: 10 %>
+    <%= form.label :coordinates %>
+    <%= form.text_field :coordinates %>
   </div>
 
   <div class="actions">

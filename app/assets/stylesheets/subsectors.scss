@@ -10,6 +10,9 @@
   background-color: #eee;
   text-align: center;
   color: black;
+  &.border {
+    background-color: lightblue;
+  }
 }
 .hexagon:visited {
   color: black;
