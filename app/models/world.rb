@@ -3,8 +3,7 @@ class World < ApplicationRecord
 
   belongs_to :subsector
   has_many :generations
-
-  after_initialize :randomize_attributes
+  
   default_scope { order(:name) }
   
   validates :name, presence: true
@@ -19,14 +18,14 @@ class World < ApplicationRecord
 
   def randomize_attributes
     g = WorldGenerator.new
-    self.starport ||= g.starport
-    self.size ||= g.size
-    self.atmosphere ||= g.atmosphere
-    self.hydrography ||= g.hydrography
-    self.population ||= g.population
-    self.government ||= g.government
-    self.law_level ||= g.law_level
-    self.tech_level ||= g.tech_level
+    self.starport = g.starport
+    self.size = g.size
+    self.atmosphere = g.atmosphere
+    self.hydrography = g.hydrography
+    self.population = g.population
+    self.government = g.government
+    self.law_level = g.law_level
+    self.tech_level = g.tech_level
   end
 
   def trade_classes

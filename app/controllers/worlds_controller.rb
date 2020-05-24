@@ -15,6 +15,7 @@ class WorldsController < ApplicationController
   # GET /worlds/new
   def new
     @world = World.new
+    @world.randomize_attributes
   end
 
   # GET /worlds/1/edit
