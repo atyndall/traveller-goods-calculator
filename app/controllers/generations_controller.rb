@@ -36,7 +36,7 @@ class GenerationsController < ApplicationController
 
     def set_shared_models
       @generations = Generation.includes(:world).all
-      @subsectors = Subsector.all
+      @subsectors = Subsector.all.includes(systems: :world)
     end
 
     # Only allow a trusted parameter "white list" through.

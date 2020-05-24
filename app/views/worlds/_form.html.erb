@@ -12,8 +12,8 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :subsector_id %>
-    <%= form.collection_select(:subsector_id, Subsector.all, :id, :name, prompt: true) %>
+    <%= form.label :system_id %>
+    <%= form.collection_select(:system_id, System.all, :id, -> (o) { '%s - %02d%02d' % [o.subsector.name, o.q, o.r] }, prompt: true) %>
   </div>
 
   <div class="field">

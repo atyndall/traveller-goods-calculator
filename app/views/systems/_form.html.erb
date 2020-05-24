@@ -1,0 +1,32 @@
+<%= form_with(model: system, local: true) do |form| %>
+  <% if system.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(system.errors.count, "error") %> prohibited this system from being saved:</h2>
+
+      <ul>
+        <% system.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :subsector_id %>
+    <%= form.collection_select(:subsector_id, Subsector.all, :id, :name, prompt: true) %>
+  </div>
+
+  <div class="field">
+    <%= form.label :q %> (first number)
+    <%= form.number_field :q, min: 1, max: 8 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :r %> (second number)
+    <%= form.number_field :r, min: 1, max: 10 %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -5,14 +5,36 @@
   <%= @subsector.name %>
 </p>
 
-<p>
-  <strong>Worlds:</strong>
-  <ul>
-    <% @subsector.worlds.each do |w| %>
-      <li><%= link_to w.name, world_path(w) %></li>
-    <% end %>
-  </ul>
-</p>
+<div class="honeycomb">
+  <% (1..10).to_a.each do |r| %>
+    <div class="ibws-fix">
+      <% (1..8).to_a.each do |q| %>
+        <% s = @hex_map[[q, r]] %>
+        <% if s&.world.present? %>
+          <%= link_to world_path(s.world), class: 'hexagon' do %>
+            <div class="hexagontent">
+              <span class="coordinates"><%= '%02d' % q %><%= '%02d' % r %></span>
+              <br>
+              <%= s.world.name %>
+            </div>
+          <% end %>
+        <% elsif s.present? %>
+          <%= link_to new_world_path(system_id: s.id), class: 'hexagon' do %>
+            <div class="hexagontent">
+              <span class="coordinates"><%= '%02d' % q %><%= '%02d' % r %></span>
+            </div>
+          <% end %>
+        <% else %>
+          <%= link_to systems_path(system: {subsector_id: @subsector.id, q: q, r: r}), method: :post, class: 'hexagon' do %>
+            <div class="hexagontent">
+              <span class="coordinates"><%= '%02d' % q %><%= '%02d' % r %></span>
+            </div>
+          <% end %>
+        <% end %>
+      <% end %>
+    </div>
+  <% end %>
+</div>
 
 <%= link_to 'Edit', edit_subsector_path(@subsector) %> |
 <%= link_to 'Back', subsectors_path %>

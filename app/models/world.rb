@@ -1,7 +1,7 @@
 class World < ApplicationRecord
   include DiceRolls
 
-  belongs_to :subsector
+  belongs_to :system
   has_many :generations
   
   default_scope { order(:name) }

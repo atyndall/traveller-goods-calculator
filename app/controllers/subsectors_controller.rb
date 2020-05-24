@@ -64,7 +64,8 @@ class SubsectorsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_subsector
-      @subsector = Subsector.includes(:worlds).find(params[:id])
+      @subsector = Subsector.includes(systems: :world).find(params[:id])
+      @hex_map = @subsector.systems.map { |s| [[s.q, s.r], s] }.to_h
     end
 
     # Only allow a list of trusted parameters through.

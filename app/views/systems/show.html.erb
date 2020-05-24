@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Subsector:</strong>
+  <%= @system.subsector.name %>
+</p>
+
+<p>
+  <strong>Coordinates:</strong>
+  <%= '%02d%02d' % [@system.q, @system.r] %>
+</p>
+
+<p>
+  <strong>World:</strong>
+  <%= @system.world ? link_to(@system.world.name, world_path(@system.world)) : link_to('Create World', new_world_path(system_id: @system.id)) %>
+</p>
+
+
+<%= link_to 'Edit', edit_system_path(@system) %> |
+<%= link_to 'Back', systems_path %>

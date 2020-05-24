@@ -1,6 +1,6 @@
 <h1>New World</h1>
 
-<%= link_to 'Reroll', new_world_path %>
+<%= link_to 'Reroll', new_world_path(system_id: @world.system_id) %>
 
 <%= render 'form', world: @world %>
 

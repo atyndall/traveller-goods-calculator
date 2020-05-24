@@ -23,7 +23,7 @@
   <tbody>
     <% @worlds.each do |world| %>
       <tr>
-        <td><%= world.subsector.name %></td>
+        <td><%= world.system.subsector.name %></td>
         <td><%= world.name %></td>
         <td><%= world.trade_classes %></td>
         <td><%= world.starport %></td>

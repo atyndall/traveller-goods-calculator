@@ -5,6 +5,7 @@
 <ul>
   <li><%= link_to 'Manage Goods', goods_path %></li>
   <li><%= link_to 'Manage Subsectors', subsectors_path %></li>
+  <li><%= link_to 'Manage Systems', systems_path %></li>
   <li><%= link_to 'Manage Worlds', worlds_path %></li>
 </ul>
 
@@ -24,8 +25,8 @@
   <% end %>
 
   <div class="field">
-    <%= form.label 'World' %>
-    <%= form.grouped_collection_select(:world_id, @subsectors, :worlds, :name, :id, :name) %>
+    <%= form.label 'System' %>
+    <%= form.grouped_collection_select(:world_id, @subsectors, :systems, :name, -> (o) { o.world&.id }, -> (o) { '%02d%02d %s' % [o.q, o.r, o.world&.name || 'No World'] }) %>
   </div>
 
   <div class="field">

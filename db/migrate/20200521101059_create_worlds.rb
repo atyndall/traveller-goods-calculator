@@ -2,7 +2,7 @@ class CreateWorlds < ActiveRecord::Migration[6.0]
   def change
     create_table :worlds do |t|
       t.string :name, null: false
-      t.belongs_to :subsector, null: false, foreign_key: {on_delete: :cascade}
+      t.belongs_to :system, null: false, foreign_key: {on_delete: :cascade}
       t.string :starport, limit: 1, null: false
       t.integer :size, limit: 1, null: false
       t.integer :atmosphere, limit: 1, null: false

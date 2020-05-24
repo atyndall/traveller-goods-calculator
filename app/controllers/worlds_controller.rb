@@ -4,17 +4,19 @@ class WorldsController < ApplicationController
   # GET /worlds
   # GET /worlds.json
   def index
-    @worlds = World.includes(:subsector).all
+    @worlds = World.includes(system: :subsector).all
   end
 
   # GET /worlds/1
   # GET /worlds/1.json
   def show
+    @generation = Generation.new(world: @world)
+    @generations = Generation.where(world: @world)
   end
 
   # GET /worlds/new
   def new
-    @world = World.new
+    @world = World.new(system_id: params[:system_id])
     @world.randomize_attributes
   end
 
@@ -65,11 +67,11 @@ class WorldsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_world
-      @world = World.includes(:subsector).find(params[:id])
+      @world = World.includes(system: :subsector).find(params[:id])
     end
 
     # Only allow a list of trusted parameters through.
     def world_params
-      params.require(:world).permit(:name, :subsector_id, :starport, :size, :atmosphere, :hydrography, :population, :government, :law_level, :tech_level)
+      params.require(:world).permit(:name, :system_id, :starport, :size, :atmosphere, :hydrography, :population, :government, :law_level, :tech_level)
     end
 end

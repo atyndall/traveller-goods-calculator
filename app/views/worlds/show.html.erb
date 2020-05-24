@@ -1,8 +1,15 @@
 <p id="notice"><%= notice %></p>
 
+<h2>Info</h2>
+
 <p>
   <strong>Subsector:</strong>
-  <%= link_to @world.subsector.name, subsector_path(@world.subsector) %>
+  <%= link_to @world.system.subsector.name, subsector_path(@world.system.subsector) %>
+</p>
+
+<p>
+  <strong>System:</strong>
+  <%= link_to '%02d%02d' % [@world.system.q, @world.system.r], system_path(@world.system) %>
 </p>
 
 <p>
@@ -54,6 +61,43 @@
   <strong>Tech level:</strong>
   <%= @world.tech_level %>
 </p>
+
+<h2>Trade Table Generation</h2>
+
+<%= form_with(model: @generation, local: true) do |form| %>
+  <% if @generation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@generation.errors.count, "error") %> prohibited this @generation from being saved:</h2>
+
+      <ul>
+        <% @generation.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= form.hidden_field :world_id %>
+
+  <div class="field">
+    <%= form.label :broker_skill %>
+    <%= form.number_field :broker_skill %>
+  </div>
+
+  <div class="actions">
+    <%= submit_tag 'Generate' %>
+  </div>
+<% end -%>
+
+<h3>History</h3>
+
+<ul>
+  <% @generations.each do |generation| %>
+    <li><%= link_to "#{time_ago_in_words generation.created_at} ago", generation_path(generation) %> (<%= link_to 'Destroy', generation, method: :delete, data: { confirm: 'Are you sure?' } %>)</td>
+    </tr>
+  <% end %>
+</ul>
+
 
 <%= link_to 'Edit', edit_world_path(@world) %> |
 <%= link_to 'Back', worlds_path %>
