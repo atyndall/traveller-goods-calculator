@@ -1,4 +1,6 @@
 class GoodsGenerator
+  include DiceRolls
+
   SALE_LOOKUP = [
     4.00, 3.00, 2.00, 1.75, 1.50, 1.35, 1.25, 1.20,
     1.15, 1.10, 1.05, 1.00, 0.95, 0.90, 0.85, 0.80,
@@ -85,9 +87,5 @@ class GoodsGenerator
 
   def broker_roll
     (3 * d6) + broker_skill
-  end
-
-  def d6
-    rand(1..6)
   end
 end
