@@ -1,6 +1,15 @@
 class WorldGenerator
   include DiceRolls
 
+  STARPORT_OPTIONS = %w(A B C D E X)
+  SIZE_OPTIONS = 0..10
+  ATMOSPHERE_OPTIONS = 0..15
+  HYDROGRAPHY_OPTIONS = 0..10
+  POPULATION_OPTIONS = 0..12
+  GOVERNMENT_OPTIONS = 0..13
+  LAW_LEVEL_OPTIONS = 0..9
+  TECH_LEVEL_OPTIONS = 0..16
+
   attr_reader :starport, :size, :atmosphere, :hydrography, :population, :government, :law_level, :tech_level
 
   def initialize
@@ -32,11 +41,11 @@ class WorldGenerator
   end
 
   def self.roll_size
-    (d6(2) - 2).clamp(0, 10)
+    (d6(2) - 2).rclamp(SIZE_OPTIONS)
   end
 
   def self.roll_atmosphere(size)
-    (d6(2) + size - 7).clamp(0, 15)
+    (d6(2) + size - 7).rclamp(ATMOSPHERE_OPTIONS)
   end
 
   def self.roll_hydrography(size, atmosphere)
@@ -50,19 +59,19 @@ class WorldGenerator
       roll -= 4
     end
 
-    roll.clamp(0, 10)
+    roll.rclamp(HYDROGRAPHY_OPTIONS)
   end
 
   def self.roll_population
-    (d6(2) - 2).clamp(0, 12)
+    (d6(2) - 2).rclamp(POPULATION_OPTIONS)
   end
 
   def self.roll_government(population)
-    (d6(2) - 7 + population).clamp(0, 13)
+    (d6(2) - 7 + population).rclamp(GOVERNMENT_OPTIONS)
   end
 
   def self.roll_law_level(government)
-    [d6(2) - 7 + government, 0].max
+    (d6(2) - 7 + government).rclamp(LAW_LEVEL_OPTIONS)
   end
 
   def self.roll_tech_level(starport, size, atmosphere, hydrography, population, government)
@@ -75,7 +84,7 @@ class WorldGenerator
         tl_mod_population(population) + \
         tl_mod_government(government)
 
-    [roll, 0].max
+    roll.rclamp(TECH_LEVEL_OPTIONS)
   end
 
   def self.tl_mod_starport(starport)
