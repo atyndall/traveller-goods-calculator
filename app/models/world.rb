@@ -6,10 +6,16 @@ class World < ApplicationRecord
 
   after_initialize :randomize_attributes
   default_scope { order(:name) }
-
-  STARPORT_OPTIONS = %w(A B C D E X)
   
-  validates :starport, inclusion: { in: STARPORT_OPTIONS, message: "%{value} is not a valid starport classification" }
+  validates :name, presence: true
+  validates :starport, inclusion: { in: WorldGenerator::STARPORT_OPTIONS, message: "%{value} not within #{WorldGenerator::STARPORT_OPTIONS}" }
+  validates :size, inclusion: { in: WorldGenerator::SIZE_OPTIONS, message: "%{value} not within #{WorldGenerator::SIZE_OPTIONS}" }
+  validates :atmosphere, inclusion: { in: WorldGenerator::ATMOSPHERE_OPTIONS, message: "%{value} not within #{WorldGenerator::ATMOSPHERE_OPTIONS}" }
+  validates :hydrography, inclusion: { in: WorldGenerator::HYDROGRAPHY_OPTIONS, message: "%{value} not within #{WorldGenerator::HYDROGRAPHY_OPTIONS}" }
+  validates :population, inclusion: { in: WorldGenerator::POPULATION_OPTIONS, message: "%{value} not within #{WorldGenerator::POPULATION_OPTIONS}" }
+  validates :government, inclusion: { in: WorldGenerator::GOVERNMENT_OPTIONS, message: "%{value} not within #{WorldGenerator::GOVERNMENT_OPTIONS}" }
+  validates :law_level, inclusion: { in: WorldGenerator::LAW_LEVEL_OPTIONS, message: "%{value} not within #{WorldGenerator::LAW_LEVEL_OPTIONS}" }
+  validates :tech_level, inclusion: { in: WorldGenerator::TECH_LEVEL_OPTIONS, message: "%{value} not within #{WorldGenerator::TECH_LEVEL_OPTIONS}" }
 
   def randomize_attributes
     g = WorldGenerator.new
