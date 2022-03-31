@@ -9,7 +9,7 @@ gem 'dotenv-rails', groups: [:development, :test]
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.1'
 # Use Puma as the app server
-gem 'puma', '~> 4.1'
+gem 'puma', '~> 4.3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
 # Bootstrap CSS
